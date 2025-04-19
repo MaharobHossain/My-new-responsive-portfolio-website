@@ -350,3 +350,36 @@ span{
     font-size: 2.4rem;
     color: var(--snd-bf-color);
 }
+
+
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3%;
+    }
+
+    .services {
+        padding: 7rem;
+
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+    .contact {
+        min-height: 2rem 3%;
+    }
+    .footer {
+        padding: 2rem 3%;
+    }
+}
