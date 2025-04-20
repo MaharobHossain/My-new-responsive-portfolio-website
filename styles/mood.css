@@ -353,8 +353,8 @@ span{
     padding: 2rem 9%;
     background: var(--snd-bf-color);
 }
-.footer-tex {
-    font-size: 1.6rem;
+.footer-text {
+    font-size: 1.8rem;
 }
 .footer-iconTop {
     display: inline-flex;
@@ -481,12 +481,17 @@ span{
         grid-template-columns: 1fr;
     }
     .home-img img {
-        width: 80vw;
-        margin-top: 4rem;
+        width: 85vw;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
     }
     .about-img img {
-        width: 100vw;
-        margin-top: 4rem;
+        width: 94vw;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    .footer-text {
+        font-size: 1.6rem;
     }
 }
 
@@ -515,6 +520,9 @@ span{
     }
     .contact form .input-box input {
         width: 100%;
+    }
+    .footer-text {
+        font-size: 1.4rem;
     }
 
 }
