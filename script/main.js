@@ -69,3 +69,20 @@ const typed = new Typed('.multiple-text', {
     loop: true,
 });
 
+/*==========  Download Resume Button   ========*/
+const downloadBtn = document.querySelector(".btn");
+// Google drive link
+const fileLink = "https://drive.google.com/file/d/1Z_zx-Yvk9Cs8CiEzZmmgtNzYUFs6wruM/view?usp=sharing";
+
+const initTimer = () => {
+
+// if download contains disable-timer cllass then only if conditional code will run
+   if(downloadBtn.classList.contains("disable-timer")) {
+    return(location.href = fileLink);
+   }
+
+// getting data-timer attribute from HTML
+    let timer = downloadBtn.dataset.timer;
+    downloadBtn.classList.add("timer");
+    downloadBtn.innerHTML = `Your file will download in <b>${timer}</b> seconds`;
+
