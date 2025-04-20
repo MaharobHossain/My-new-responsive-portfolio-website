@@ -234,8 +234,6 @@ span{
 .portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* display: flex;
-    flex-direction: row; */
     align-items: center;
     gap: 2.5rem;
 }
@@ -286,8 +284,8 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     background: var(--text-color);
     border-radius: 50%;
 }
