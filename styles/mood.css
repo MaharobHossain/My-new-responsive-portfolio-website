@@ -158,7 +158,18 @@ span{
 .btn:hover {
     box-shadow: none;
 }
-
+.btn.timer{
+    color: #fff;
+    background: none;
+    box-shadow: none;
+    font-size: 1.6rem;
+    pointer-events: none;
+    transition: none;
+}
+.btn.timer b{
+    color: #59B2F4;
+    padding: 0 8px;
+}
 .about {
     display: flex;
     justify-content: center;
