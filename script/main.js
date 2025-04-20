@@ -86,3 +86,25 @@ const initTimer = () => {
     downloadBtn.classList.add("timer");
     downloadBtn.innerHTML = `Your file will download in <b>${timer}</b> seconds`;
 
+//creating initCouter variable with setInterval function
+const initCounter = setInterval(() => {
+    if(timer > 0){
+    timer--;
+    return downloadBtn.innerHTML = `Your file will download in <b>${timer}</b> seconds`;       
+    }
+
+    clearInterval(initCounter);
+    location.href = fileLink;
+    downloadBtn.textContent ="Your file is downloading...";
+
+
+    setTimeout(() => {
+        downloadBtn.classList.replace("timer", "disable-timer");
+        downloadBtn.innerHTML =`<a href="#" class="btn" data-timer="5">Download Again CV/Resume</a>`;
+    },2000);
+
+}, 1000); //1000 milliseconds = 1s
+
+};
+
+downloadBtn.addEventListener("click", initTimer);
