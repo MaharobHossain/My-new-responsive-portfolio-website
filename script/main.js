@@ -72,7 +72,7 @@ const typed = new Typed('.multiple-text', {
 /*==========  Download Resume Button   ========*/
 const downloadBtn = document.querySelector(".btn");
 // Google drive link
-const fileLink = "https://drive.google.com/file/d/1Z_zx-Yvk9Cs8CiEzZmmgtNzYUFs6wruM/view?usp=sharing";
+const fileLink = "https://drive.google.com/file/d/1cWoLoEZ0kqSIRT5bnxWQj91vSemmIo03/view?usp=sharing";
 
 const initTimer = () => {
 
